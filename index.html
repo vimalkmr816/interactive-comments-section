@@ -12,11 +12,39 @@
   <title>Frontend Mentor | Interactive comments section</title>
 </head>
 
-<body class="bg-success bg-opacity-10 ">
+<body>
 
   <!-- Pull dynamic content from the data.json file -->
-  <div class="comment_container main_container"></div>
-
+  <div class="comment_container main_container d-flex align-items-center flex-column">
+    <!-- <div class="container  d-flex align-items-center justify-content-center bg-light rounded-3 p-3 my-3">
+	    <div
+	      class="score_container bg-primary bg-opacity-10 px-3 d-flex justify-content-around align-items-center flex-column rounded-3 me-4 ">
+	      <div class="score_plus py-2">+</div>
+	      <div class="score_number py-2" id="score">${commentsData.score}</div>
+	      <div class="score_minus py-2">-</div>
+	    </div>
+	    <div class="comment_container">
+	      <div class="comment_topbar d-flex align-items-center justify-content-between">
+	        <div class="comment_details d-flex align-items-center gap-2">
+	          <div class="comment_img">
+	            <img src="${commentsData.user.image.png}" width="30px" alt="img_icon" id="img_icon">
+	          </div>
+	          <div class="comment_name fw-bold" id="username">${commentsData.user.username}</div>
+	          <div class="comment_date" id="date_created">${commentsData.createdAt}</div>
+	        </div>
+	        <div class="comment_reply fw-bold"><img class="me-2" src="./images/icon-reply.svg" alt="icon-reply">Reply</div>
+	      </div>
+	      <div class="comment_content my-3" id="comment_content">${commentsData.content}
+	      </div>
+	    </div>
+	  </div> -->
+  </div>
+  <div class="container  d-flex align-items-start justify-content-center bg-light rounded-3 p-3 my-3">
+    <img src="images/avatars/image-juliusomo.png" width="30px" class="me-3 ms-0" alt="current_user_icons">
+    <textarea class="w-100 ps-3 pt-2 border border-1 rounded-3" id="comment_area" rows="6" style="resize: none;"
+      placeholder="Add a comment..."></textarea>
+    <button class="border border-0 ms-3 mt-0 px-4 py-2" id="send_btn">SEND</button>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Vimal Kumar</a>.
